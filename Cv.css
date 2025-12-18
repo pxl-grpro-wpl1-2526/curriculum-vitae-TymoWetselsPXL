@@ -116,3 +116,20 @@
 .pf-left{ justify-self: start; color: var(--muted); }
 .pf-middle{ justify-self: center; color: rgba(231,236,245,.85); }
 
+html{ scroll-behavior: smooth; }
+
+.pf-right{
+    justify-self: end;
+    text-decoration: none;
+    color: var(--text);
+    padding: 10px 14px;
+    border-radius: 14px;
+    border: 1px solid rgba(122,162,255,.25);
+    background: rgba(122,162,255,.10);
+    transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease;
+}
+.pf-right:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 16px 32px rgba(0,0,0,.40);
+    border-color: rgba(122,162,255,.45);
+}
