@@ -1,0 +1,25 @@
+.cv{
+    width: min(1100px, calc(100% - 32px));
+    margin: 24px auto;
+    display: grid;
+    grid-template-columns: 340px 1fr;
+    border-radius: 18px;
+    overflow: hidden;
+}
+.avatar-img{
+    width: 58px;
+    height: 58px;
+    border-radius: 16px;
+    object-fit: cover;
+    transition: box-shadow .15s ease, transform .15s ease;
+}
+
+.profile:hover .avatar-img{
+    box-shadow: 0 14px 30px rgba(0,0,0,.55);
+    transform: scale(1.02);
+}
+.profile{
+    text-decoration: none;
+    color: inherit;
+}
+
