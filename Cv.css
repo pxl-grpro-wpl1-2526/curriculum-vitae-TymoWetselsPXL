@@ -22,4 +22,12 @@
     text-decoration: none;
     color: inherit;
 }
+.lang-table{ width: 100%; border-collapse: separate; border-spacing: 0; }
+
+.lang-table tbody tr:nth-child(odd){
+    background: rgba(255,255,255,.02);
+}
+.lang-table tbody tr:nth-child(even){
+    background: rgba(255,255,255,.05);
+}
 
