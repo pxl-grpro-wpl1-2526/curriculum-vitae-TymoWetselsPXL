@@ -6,28 +6,65 @@
     border-radius: 18px;
     overflow: hidden;
 }
+
+.profile{
+    display: flex;
+    gap: 14px;
+    align-items: center;
+    padding: 16px;
+    border-radius: 18px;
+    border: 1px solid var(--line);
+    background: linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.02));
+    text-decoration: none;
+    color: inherit;
+    transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease;
+
 .avatar-img{
-    width: 58px;
-    height: 58px;
-    border-radius: 16px;
+    width: 64px;
+    height: 64px;
+    border-radius: 18px;
     object-fit: cover;
-    transition: box-shadow .15s ease, transform .15s ease;
+    border: 1px solid rgba(255,255,255,.14);
+    transition: box-shadow .18s ease, transform .18s ease;
+}
+.profile:hover{
+    transform: translateY(-2px);
+    border-color: rgba(122,162,255,.35);
+    box-shadow: 0 20px 48px rgba(0,0,0,.50);
 }
 
 .profile:hover .avatar-img{
-    box-shadow: 0 14px 30px rgba(0,0,0,.55);
-    transform: scale(1.02);
+    box-shadow: 0 16px 34px rgba(0,0,0,.60);
+    transform: scale(1.03);
 }
 .profile{
     text-decoration: none;
     color: inherit;
+}}
+.lang-table{
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: 18px;
+    overflow: hidden;
+    border: 1px solid var(--line);
+    background: linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.02));
 }
-.lang-table{ width: 100%; border-collapse: separate; border-spacing: 0; }
 
-.lang-table tbody tr:nth-child(odd){
-    background: rgba(255,255,255,.02);
+.lang-table th, .lang-table td{
+    padding: 14px 16px;
+    text-align: left;
 }
-.lang-table tbody tr:nth-child(even){
-    background: rgba(255,255,255,.05);
+
+.lang-table thead th{
+    text-transform: uppercase;
+    letter-spacing: .12em;
+    font-size: .80rem;
+    color: rgba(231,236,245,.88);
+    background: rgba(255,255,255,.04);
 }
+
+.lang-table tbody tr:nth-child(odd){ background: rgba(255,255,255,.02); }
+.lang-table tbody tr:nth-child(even){ background: rgba(255,255,255,.06); }
+
 
