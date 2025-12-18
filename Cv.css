@@ -66,5 +66,38 @@
 
 .lang-table tbody tr:nth-child(odd){ background: rgba(255,255,255,.02); }
 .lang-table tbody tr:nth-child(even){ background: rgba(255,255,255,.06); }
+.experience-list{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 14px;
+}
+
+.exp{
+    padding: 18px;
+    border-radius: 18px;
+    border: 1px solid var(--line);
+    background: linear-gradient(180deg, rgba(255,255,255,.05), rgba(255,255,255,.02));
+    box-shadow: 0 10px 26px rgba(0,0,0,.28);
+    transition: transform .18s ease, box-shadow .18s ease;
+}
+
+.exp:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 18px 42px rgba(0,0,0,.42);
+}
+
+.exp-head{
+    display: flex;
+    justify-content: space-between;
+    gap: 14px;
+    align-items: baseline;
+}
+
+.exp-functie{ font-weight: 800; font-size: 1.05rem; }
+.exp-organisatie{ margin-top: 6px; color: var(--muted); }
+.exp-periode{ white-space: nowrap; color: rgba(231,236,245,.88); }
+.exp-beschrijving{ margin: 14px 0 0; color: var(--muted); }
 
 
